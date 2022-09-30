@@ -1,0 +1,9 @@
+.groupContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.groupTitle {}
+
+.group {}

@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+  --bg: #eaeaea;
+  --card-color: #ffffff;
+  --main-font-color: #000000;
+  --extra-font-color-1: #ffa542;
+  --extra-font-color-2: #838383;
+
+  --font: 600 17px/21px "Montserrat", sans-serif
+}
