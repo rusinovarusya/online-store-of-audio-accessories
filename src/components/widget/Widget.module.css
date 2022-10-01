@@ -1,6 +1,9 @@
 .widget {
   position: relative;
-  width: 42px;
+  width: 40px;
+  height: 35px;
+  background-color: var(--bg);
+  border: none;
 }
 
 .count {

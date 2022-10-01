@@ -4,7 +4,7 @@ import styles from "./ShoppingCardWidget.module.css";
 
 const ShoppingCardWidget: FC = () => {
   return (
-    <div className={styles.widget}></div>
+    <div className={styles.img}></div>
   )
 }
 

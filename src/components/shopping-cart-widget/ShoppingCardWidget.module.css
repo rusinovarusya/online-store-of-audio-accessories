@@ -1,8 +1,9 @@
-.widget {
+.img {
   display: block;
+  width: 30px;
   height: 24px;
-  background-color: var(--extra-font-color-2);
+  color: var(--extra-font-color-2);
   background-image: url("../../assets/shopping-cart.svg");
-
-  border: 1px solid red;
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
