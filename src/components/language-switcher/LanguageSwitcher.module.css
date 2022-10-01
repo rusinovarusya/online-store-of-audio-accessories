@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  gap: 17px;
+  height: 20px;
+}
+
+.language {
+  display: block;
+  width: 17px;
+  height: 17px;
+  color: var(--extra-font-color-2);
+  background-image: url("../../assets/language.svg");
+  background-position: center;
+  background-size: 17px 17px;
+}
+
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.label {
+  font: var(--font-1);
+  font-weight: 500;
+  color: var(--main-font-color);
+}
+.input:checked + .label {
+  color: var(--extra-font-color-1);
+  transition:cubic-bezier(1, 0, 0, 1);
+}

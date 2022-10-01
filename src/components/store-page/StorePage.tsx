@@ -5,7 +5,9 @@ interface StorePageProps {}
 
 const StorePage: FC<PropsWithChildren<StorePageProps>> =({children}) => {
   return (
-    <div className={styles.store}>{children}</div>
+    <div className={styles.storePageBG}>
+      <div className={styles.mainContainer}>{children}</div>
+    </div>
   )
 }
 

@@ -1,0 +1,27 @@
+.socialNetworksList {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  padding-left: 0px;
+}
+
+.socialNetworkItem {}
+
+.link {
+  text-decoration: none;
+  display: block;
+  width: 30px;
+  height: 30px;
+  color: var(--extra-font-color-2);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.link:nth-child(1) {
+  background-image: url("../../assets/vk.svg");
+}
+.link:nth-child(2) {
+  background-image: url("../../assets/telegram.svg");
+}
+.link:nth-child(3) {
+  background-image: url("../../assets/whatsapp.svg");
+}
