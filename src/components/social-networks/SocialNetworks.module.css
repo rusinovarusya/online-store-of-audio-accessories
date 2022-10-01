@@ -16,12 +16,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.link:nth-child(1) {
+.socialNetworkItem:nth-child(1) .link {
   background-image: url("../../assets/vk.svg");
 }
-.link:nth-child(2) {
+.socialNetworkItem:nth-child(2) .link {
   background-image: url("../../assets/telegram.svg");
 }
-.link:nth-child(3) {
+.socialNetworkItem:nth-child(3) .link {
   background-image: url("../../assets/whatsapp.svg");
 }
