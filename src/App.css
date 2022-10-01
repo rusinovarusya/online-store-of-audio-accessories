@@ -39,7 +39,11 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+}
 
 :root {
   --bg: #eaeaea;
@@ -48,5 +52,6 @@
   --extra-font-color-1: #ffa542;
   --extra-font-color-2: #838383;
 
-  --font: 600 17px/21px "Montserrat", sans-serif
+  --font-1: 600 17px/21px "Montserrat", sans-serif;
+  --font-2: 600 20px/24px "Montserrat", sans-serif;
 }

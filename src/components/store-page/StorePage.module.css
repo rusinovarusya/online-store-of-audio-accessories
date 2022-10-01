@@ -1,5 +1,13 @@
-.store {
-  width: 100vw;
+.storePageBG {
+  min-width: 100vw;
   height: 100vh;
   background-color: var(--bg);
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 1110px;
+  margin: 0px auto;
 }
