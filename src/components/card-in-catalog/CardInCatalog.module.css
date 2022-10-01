@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  width: 310px;
+  padding: 10px 20px 25px;
+  background-color: var(--card-color);
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img {
+  width: 220px; /* delete */
+  height: 237px; /* delete */
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font: var(--font-1);
+  color: var(--main-font-color);
+}
+
+.price {
+  font: var(--font-1);
+  color: var(--extra-font-color-1);
+}
+
+.rating {
+  display: flex;
+  gap: 10px;
+  font: var(--font-1);
+  color: var(--extra-font-color-2); /* ? */
+}
+
+.button {
+  padding-right: 0px;
+  font: var(--font-1);
+  background-color: var(--card-color);
+  border: none;
+}

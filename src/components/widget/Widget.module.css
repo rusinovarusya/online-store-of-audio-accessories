@@ -1,0 +1,17 @@
+.widget {
+  position: relative;
+  width: 42px;
+}
+
+.count {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 18px;
+  height: 18px;
+  font: 500 15px/18px "Montserrat", sans-serif;
+  color: var(--card-color);
+  background-color: var(--extra-font-color-1);
+  border-radius: 50%;
+  text-align: center;
+}

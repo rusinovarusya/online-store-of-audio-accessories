@@ -1,0 +1,8 @@
+.widget {
+  display: block;
+  height: 24px;
+  background-color: var(--extra-font-color-2);
+  background-image: url("../../assets/shopping-cart.svg");
+
+  border: 1px solid red;
+}

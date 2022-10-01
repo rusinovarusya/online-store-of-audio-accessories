@@ -1,0 +1,13 @@
+.ratingContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.star {
+  display: block;
+  width: 24px;
+  height: 22px;
+  color: var(--extra-font-color-1);
+  background-image: url("../../assets/star.svg");
+}

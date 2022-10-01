@@ -6,7 +6,7 @@ interface CatalogProps {}
 
 const Catalog: FC<PropsWithChildren<CatalogProps>> = ({children}) => {
   return (
-    <div className={styles.catalog}>{children}</div>
+    <main className={styles.catalog}>{children}</main>
   )
 }
 
