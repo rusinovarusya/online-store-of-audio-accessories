@@ -6,7 +6,10 @@ interface ShoppingCartProps {}
 
 const ShoppingCart: FC<PropsWithChildren<ShoppingCartProps>> = ({children}) => {
   return (
-    <div className={styles.container}>{children}</div>
+    <div className={styles.container}>
+      <h2 className={styles.title}>Корзина</h2>
+      <div className={styles.content}>{children}</div>
+    </div>
   )
 }
 
