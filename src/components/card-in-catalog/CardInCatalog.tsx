@@ -1,20 +1,20 @@
 import { FC, memo, PropsWithChildren } from "react";
+import { getHeadphonesData, getWirelessHeadphonesData } from "../../getData";
 import Rating from "../rating/Rating";
 import styles from "./CardInCatalog.module.css";
 
 
 interface CardInCatalogProps {
   index: number;
-  img: any; //string;
-  name: string;
-  price: number;
-  rating: number;
+  type: string;
 }
 
-const CardInCatalog: FC<PropsWithChildren<CardInCatalogProps>> = ({index, img, name, price, rating}) => {
+const CardInCatalog: FC<PropsWithChildren<CardInCatalogProps>> = ({ index, type }) => {
+  const { img, name, price, rating } = (type === "wireless") ? getWirelessHeadphonesData(index) : getHeadphonesData(index);
+
   return (
     <div className={styles.card}>
-      <img src={`../../assets/${img}`} alt="img" className={styles.img} />
+      <img src={`/images/${img}`} alt="headphones img" className={styles.img} />
       <div className={styles.info}>
         <div className={styles.row}>
           <div className={styles.name}>{name}</div>

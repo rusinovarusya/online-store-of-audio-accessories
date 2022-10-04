@@ -12,6 +12,7 @@
 .img {
   width: 220px; /* delete */
   height: 237px; /* delete */
+  margin: 0px auto;
 }
 
 .info {

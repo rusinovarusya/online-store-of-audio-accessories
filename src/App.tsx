@@ -20,16 +20,23 @@ const App = () => {
         <Route path="/" element={
           <Catalog>
             <GroupOfGoods title="Наушники">
-              <CardInCatalog index={0} img="apple-byz-s8521.png" name="Name" price={1} rating={4.9} />
+              <CardInCatalog index={0} type="headphones" />
+              <CardInCatalog index={1} type="headphones" />
+              <CardInCatalog index={2} type="headphones" />
+              <CardInCatalog index={3} type="headphones" />
+              <CardInCatalog index={4} type="headphones" />
+              <CardInCatalog index={5} type="headphones" />
             </GroupOfGoods>
             <GroupOfGoods title="Беспроводные наушники">
-              <CardInCatalog index={1} img="apple-byz-s8521.png" name="Name" price={1} rating={4.9} />
+              <CardInCatalog index={0} type="wireless" />
+              <CardInCatalog index={1} type="wireless" />
+              <CardInCatalog index={2} type="wireless" />
             </GroupOfGoods>
           </Catalog>
         } />
         <Route path="/shopping-cart" element={
           <ShoppingCart>
-            <CardInShoppingCart/>
+            <CardInShoppingCart index={0} type="headphones" />
             <Total />
           </ShoppingCart>
         } />
