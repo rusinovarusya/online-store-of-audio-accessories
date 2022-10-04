@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.number {
+  font: var(--font-1);
+  color: var(--main-font-color);
+}
