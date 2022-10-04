@@ -1,8 +1,12 @@
-import { FC, memo } from "react";
+import { FC, memo, PropsWithChildren } from "react";
+import styles from "./ShoppingCart.module.css";
 
-const ShoppingCart: FC = () => {
+
+interface ShoppingCartProps {}
+
+const ShoppingCart: FC<PropsWithChildren<ShoppingCartProps>> = ({children}) => {
   return (
-    <div>Shopping cart</div>
+    <div className={styles.container}>{children}</div>
   )
 }
 

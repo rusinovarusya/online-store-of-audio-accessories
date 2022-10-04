@@ -1,0 +1,65 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 633px;
+  padding: 18px 28px 17px 17px;
+  background-color: var(--card-color);
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.initialBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.mainBlock {
+  display: flex;
+  gap: 24px;
+}
+
+.img {
+  width: 145px; /* delete */
+  height: 136px; /* delete */
+}
+
+.informationBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.name {
+  font: var(--font-1);
+  font-weight: 500;
+  color: #1c1c27;
+}
+
+.price {
+  font: var(--font-1);
+  font-size: 15px;
+  line-height: 18px;
+  color: #aaaaaa;
+}
+
+.finalBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.delete {
+  width: 20px;
+  height: 17px;
+  color: #df6464;
+  background-image: url("../../assets/delete.svg");
+}
+
+.cost {
+  font: var(--font-1);
+  color: var(--main-font-color);
+  text-align: right;
+}
