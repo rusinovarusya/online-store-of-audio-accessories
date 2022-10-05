@@ -13,7 +13,11 @@ const InputNumber: FC<PropsWithChildren<InputNumberProps>> = () => {
 
     return (
       <div className={styles.container}>
-        <Button onClick={() => setCount(count - 1)}>
+        <Button onClick={() => { 
+          if (count > 0) {
+            setCount(count - 1)
+          }
+        }}>
           <Minus />
         </Button>
         <div className={styles.number}>
