@@ -12,6 +12,7 @@ import Total from "./components/total/Total";
 
 
 const App = () => {
+
   return (
     <HashRouter>
       <StorePage>
