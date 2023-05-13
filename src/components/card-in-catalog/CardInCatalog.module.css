@@ -50,6 +50,10 @@
   border: none;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .button:active {
   color: var(--extra-font-color-1);
 }
