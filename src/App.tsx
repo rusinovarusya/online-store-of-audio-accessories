@@ -7,8 +7,6 @@ import GroupOfGoods from "./components/group-of-goods/GroupOfGoods";
 import CardInCatalog from "./components/card-in-catalog/CardInCatalog";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import ShoppingCart from "./components/shopping-cart/ShoppingCart";
-import CardInShoppingCart from "./components/card-in-shopping-cart/CardInShoppingCart";
-import Total from "./components/total/Total";
 
 
 const App = () => {
@@ -21,25 +19,15 @@ const App = () => {
         <Route path="/" element={
           <Catalog>
             <GroupOfGoods title="Наушники">
-              <CardInCatalog index={0} type="headphones" />
-              <CardInCatalog index={1} type="headphones" />
-              <CardInCatalog index={2} type="headphones" />
-              <CardInCatalog index={3} type="headphones" />
-              <CardInCatalog index={4} type="headphones" />
-              <CardInCatalog index={5} type="headphones" />
+              {[0, 1, 2, 3, 4, 5].map(i => <CardInCatalog index={i} type="headphones" />)}
             </GroupOfGoods>
             <GroupOfGoods title="Беспроводные наушники">
-              <CardInCatalog index={0} type="wireless" />
-              <CardInCatalog index={1} type="wireless" />
-              <CardInCatalog index={2} type="wireless" />
+              {[0, 1, 2].map(i => <CardInCatalog index={i} type="wireless" />)}
             </GroupOfGoods>
           </Catalog>
         } />
         <Route path="/shopping-cart" element={
-          <ShoppingCart>
-            <CardInShoppingCart index={0} type="headphones" />
-            <Total />
-          </ShoppingCart>
+          <ShoppingCart />
         } />
         </Routes>
         <Footer />

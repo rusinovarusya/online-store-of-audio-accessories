@@ -3,13 +3,13 @@ import styles from "./Button.module.css";
 
 
 interface ButtonProps {
-  onClick: any;
+  handleClick: () => void;
 }
 
-const Button: FC<PropsWithChildren<ButtonProps>> = ({onClick, children}) => {
+const Button: FC<PropsWithChildren<ButtonProps>> = ({ handleClick, children }) => {
   return (
-    <button className={styles.button} onClick={onClick}>{children}</button>
-  )
+    <button className={styles.button} onClick={handleClick}>{children}</button>
+  );
 }
 
 export default memo(Button);

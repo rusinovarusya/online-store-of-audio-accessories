@@ -1,7 +1,8 @@
-import { FC, memo, PropsWithChildren, useState } from "react";
+import { FC, memo, PropsWithChildren } from "react";
 import { getHeadphonesData, getWirelessHeadphonesData } from "../../getData";
 import Rating from "../rating/Rating";
 import styles from "./CardInCatalog.module.css";
+import { AppDataContextModel, useAppDataContext } from "../../context/app-data.provider";
 
 
 interface CardInCatalogProps {
@@ -9,12 +10,11 @@ interface CardInCatalogProps {
   type: string;
 }
 
+
 const CardInCatalog: FC<PropsWithChildren<CardInCatalogProps>> = ({ index, type }) => {
+  const { addItem } = useAppDataContext() as AppDataContextModel;
+
   const { img, name, price, rating } = (type === "wireless") ? getWirelessHeadphonesData(index) : getHeadphonesData(index);
-  
-  const onClick = () => {
-    sessionStorage.setItem(type + index, `${sessionStorage.getItem(type + index) || 0 + 1}`);
-  }
 
   return (
     <div className={styles.card}>
@@ -28,7 +28,7 @@ const CardInCatalog: FC<PropsWithChildren<CardInCatalogProps>> = ({ index, type 
           <div className={styles.rating}>
             <Rating rating={rating} />
           </div>
-          <button className={styles.button} onClick={onClick}>Купить</button>
+          <button className={styles.button} onClick={() => addItem(index, type)}>Купить</button>
         </div>
       </div>
     </div>

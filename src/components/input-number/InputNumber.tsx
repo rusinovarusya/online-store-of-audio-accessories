@@ -3,19 +3,25 @@ import Button from "../button/Button";
 import styles from "./InputNumber.module.css";
 import Minus from "../minus/Minus";
 import Plus from "../plus/Plus";
+import { AppDataContextModel, useAppDataContext } from "../../context/app-data.provider";
 
 
-interface InputNumberProps {}
+interface InputNumberProps {
+  index: number;
+  type: string;
+}
 
-const InputNumber: FC<PropsWithChildren<InputNumberProps>> = () => {
+const InputNumber: FC<PropsWithChildren<InputNumberProps>> = ({ index, type }) => {
+  const { increaseCount, decreaseCount, countItem } = useAppDataContext() as AppDataContextModel;
 
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(countItem(index, type));
 
     return (
       <div className={styles.container}>
-        <Button onClick={() => { 
+        <Button handleClick={() => { 
           if (count > 0) {
-            setCount(count - 1)
+            setCount(count - 1);
+            decreaseCount(index, type);
           }
         }}>
           <Minus />
@@ -23,7 +29,10 @@ const InputNumber: FC<PropsWithChildren<InputNumberProps>> = () => {
         <div className={styles.number}>
           {count}
         </div>
-        <Button onClick={() => setCount(count + 1)}>
+        <Button handleClick={() => {
+          setCount(count + 1);
+          increaseCount(index, type);
+          }}>
           <Plus />
         </Button>
       </div>

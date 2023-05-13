@@ -2,6 +2,7 @@ import { FC, memo, PropsWithChildren } from "react";
 import { getHeadphonesData, getWirelessHeadphonesData } from "../../getData";
 import InputNumber from "../input-number/InputNumber";
 import styles from "./CardInShoppingCart.module.css";
+import { AppDataContextModel, useAppDataContext } from "../../context/app-data.provider";
 
 
 interface CardInShoppingCartProps {
@@ -10,6 +11,8 @@ interface CardInShoppingCartProps {
 }
 
 const CardInShoppingCart: FC<PropsWithChildren<CardInShoppingCartProps>> = ({ index, type }) => {
+  const { removeItem, countCost } = useAppDataContext() as AppDataContextModel;
+
   const { img, name, price, rating } = (type === "wireless") ? getWirelessHeadphonesData(index) : getHeadphonesData(index);
 
   return (
@@ -22,11 +25,11 @@ const CardInShoppingCart: FC<PropsWithChildren<CardInShoppingCartProps>> = ({ in
             <div className={styles.price}>{price} ₽</div>
           </div>
         </div>
-        <InputNumber />
+        <InputNumber index={index} type={type} />
       </div>
       <div className={styles.finalBlock}>
-        <div className={styles.delete}></div>
-        <div className={styles.cost}>{price} ₽</div>
+        <div className={styles.delete} onClick={() => removeItem(index, type)}></div>
+        <div className={styles.cost}>{countCost(index, type)} ₽</div>
       </div>
     </div>
   )
