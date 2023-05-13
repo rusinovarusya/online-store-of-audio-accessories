@@ -20,8 +20,8 @@
 }
 
 .img {
-  width: 145px; /* delete */
-  height: 136px; /* delete */
+  width: 145px;
+  height: 136px;
 }
 
 .informationBlock {
@@ -56,6 +56,8 @@
   height: 17px;
   color: #df6464;
   background-image: url("../../assets/delete.svg");
+  background-color: transparent;
+  border: none;
 }
 
 .cost {

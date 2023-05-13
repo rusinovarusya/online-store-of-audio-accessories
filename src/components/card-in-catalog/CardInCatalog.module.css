@@ -10,8 +10,8 @@
 }
 
 .img {
-  width: 220px; /* delete */
-  height: 237px; /* delete */
+  width: 220px;
+  height: 237px;
   margin: 0px auto;
 }
 
@@ -40,7 +40,7 @@
   display: flex;
   gap: 10px;
   font: var(--font-1);
-  color: var(--extra-font-color-2); /* ? */
+  color: var(--extra-font-color-2);
 }
 
 .button {
@@ -48,4 +48,8 @@
   font: var(--font-1);
   background-color: var(--card-color);
   border: none;
+}
+
+.button:active {
+  color: var(--extra-font-color-1);
 }

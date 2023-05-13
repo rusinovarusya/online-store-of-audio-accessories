@@ -8,7 +8,9 @@ interface ButtonProps {
 
 const Button: FC<PropsWithChildren<ButtonProps>> = ({ handleClick, children }) => {
   return (
-    <button className={styles.button} onClick={handleClick}>{children}</button>
+    <button className={styles.button} onClick={handleClick}>
+      {children}
+    </button>
   );
 }
 

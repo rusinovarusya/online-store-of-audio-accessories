@@ -5,8 +5,6 @@
   padding-left: 0px;
 }
 
-.socialNetworkItem {}
-
 .link {
   text-decoration: none;
   display: block;
@@ -16,12 +14,15 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .socialNetworkItem:nth-child(1) .link {
   background-image: url("../../assets/vk.svg");
 }
+
 .socialNetworkItem:nth-child(2) .link {
   background-image: url("../../assets/telegram.svg");
 }
+
 .socialNetworkItem:nth-child(3) .link {
   background-image: url("../../assets/whatsapp.svg");
 }

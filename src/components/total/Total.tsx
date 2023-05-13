@@ -14,7 +14,7 @@ const Total: FC = () => {
       </div>
       <button className={styles.button}>Перейти к оформлению</button>
     </div>
-  )
+  );
 }
 
 export default memo(Total);

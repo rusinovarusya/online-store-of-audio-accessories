@@ -5,6 +5,7 @@
   background-color: var(--bg);
   border: none;
 }
+
 .widget:hover {
   cursor: pointer;
 }

@@ -1,13 +1,11 @@
-import { FC, memo, PropsWithChildren } from "react";
+import { FC, memo } from "react";
 import styles from "./ShoppingCart.module.css";
 import Total from "../total/Total";
 import CardInShoppingCart from "../card-in-shopping-cart/CardInShoppingCart";
 import { AppDataContextModel, useAppDataContext } from "../../context/app-data.provider";
 
 
-interface ShoppingCartProps {}
-
-const ShoppingCart: FC<PropsWithChildren<ShoppingCartProps>> = ({children}) => {
+const ShoppingCart: FC = () => {
   const { itemsInCart, countItems } = useAppDataContext() as AppDataContextModel;
 
   return (
@@ -20,7 +18,7 @@ const ShoppingCart: FC<PropsWithChildren<ShoppingCartProps>> = ({children}) => {
         {countItems() ? <Total /> : <></>}
       </div>
     </div>
-  )
+  );
 }
 
 export default memo(ShoppingCart);

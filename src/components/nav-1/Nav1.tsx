@@ -7,13 +7,19 @@ const Nav1: FC = () => {
   return (
     <nav>
       <ul className={styles.list}>
-        <li className={styles.item}><a className={styles.link} href="#">Избранное</a></li>
-        <Link to={"/shopping-cart"}><li className={styles.item}><a className={styles.link} href="#">Корзина</a></li></Link>
-        <li className={styles.item}><a className={styles.link} href="#">Контакты</a></li>
+        <li className={styles.item}>
+          <a className={styles.link} href="#">Избранное</a>
+        </li>
+        <Link to={"/shopping-cart"}><li className={styles.item}>
+          <a className={styles.link} href="#">Корзина</a>
+        </li></Link>
+        <li className={styles.item}>
+          <a className={styles.link} href="#">Контакты</a>
+        </li>
       </ul>
       <ul></ul>
     </nav>
-  )
+  );
 }
 
 export default memo(Nav1);

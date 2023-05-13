@@ -1,7 +1,7 @@
 import { headphones, wirelessHeadphones } from "./data";
 
 
-export const getHeadphonesData = (index: number): { img: string, name: string, price: number, rating: number } => {
+export const getHeadphonesData = (index: number) => {
   return {
     img: headphones[index].img,
     name: headphones[index].name,

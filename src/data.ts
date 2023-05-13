@@ -56,4 +56,4 @@ export const wirelessHeadphones = [
     price: 7527,
     rating: 4.7
   }
-]
+];

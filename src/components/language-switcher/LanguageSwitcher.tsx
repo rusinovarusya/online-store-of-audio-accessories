@@ -11,7 +11,7 @@ const LanguageSwitcher: FC = () => {
       <input type="radio" className={styles.input} name="language" id="en" value="en" />
       <label htmlFor="en" className={styles.label}>Eng</label>
     </div>
-  )
+  );
 }
 
 export default memo(LanguageSwitcher);

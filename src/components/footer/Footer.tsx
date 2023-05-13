@@ -20,7 +20,7 @@ const Footer: FC = () => {
       </Nav2>
       <SocialNetworks />
     </footer>
-  )
+  );
 }
 
 export default memo(Footer);

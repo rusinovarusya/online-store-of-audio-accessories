@@ -10,7 +10,6 @@ interface CardInCatalogProps {
   type: string;
 }
 
-
 const CardInCatalog: FC<PropsWithChildren<CardInCatalogProps>> = ({ index, type }) => {
   const { addItem } = useAppDataContext() as AppDataContextModel;
 
@@ -32,7 +31,7 @@ const CardInCatalog: FC<PropsWithChildren<CardInCatalogProps>> = ({ index, type 
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default memo(CardInCatalog);

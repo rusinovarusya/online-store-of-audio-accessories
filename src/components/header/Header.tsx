@@ -1,4 +1,4 @@
-import { FC, memo, useEffect } from "react";
+import { FC, memo } from "react";
 import { Link } from "react-router-dom";
 import FavoriteGoodsWidget from "../favorite-goods-widget/FavoriteGoodsWidget";
 import Logo from "../logo/Logo";
@@ -28,7 +28,7 @@ const Header: FC = () => {
         </Link>
         </WidgetsContainer>
     </header>
-  )
+  );
 }
 
 export default memo(Header);

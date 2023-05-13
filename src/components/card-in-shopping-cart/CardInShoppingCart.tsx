@@ -28,11 +28,11 @@ const CardInShoppingCart: FC<PropsWithChildren<CardInShoppingCartProps>> = ({ in
         <InputNumber index={index} type={type} />
       </div>
       <div className={styles.finalBlock}>
-        <div className={styles.delete} onClick={() => removeItem(index, type)}></div>
+        <button className={styles.delete} onClick={() => removeItem(index, type)}></button>
         <div className={styles.cost}>{countCost(index, type)} ₽</div>
       </div>
     </div>
-  )
+  );
 }
 
 export default memo(CardInShoppingCart);

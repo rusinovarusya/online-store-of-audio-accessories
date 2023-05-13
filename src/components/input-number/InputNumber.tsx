@@ -36,7 +36,7 @@ const InputNumber: FC<PropsWithChildren<InputNumberProps>> = ({ index, type }) =
           <Plus />
         </Button>
       </div>
-    )
+    );
   }
 
 export default memo(InputNumber);
