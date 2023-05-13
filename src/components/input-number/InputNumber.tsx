@@ -12,14 +12,16 @@ interface InputNumberProps {
 }
 
 const InputNumber: FC<PropsWithChildren<InputNumberProps>> = ({ index, type }) => {
-  const { increaseCount, decreaseCount, countItem } = useAppDataContext() as AppDataContextModel;
+  const { removeItem, increaseCount, decreaseCount, countItem } = useAppDataContext() as AppDataContextModel;
 
   const [count, setCount] = useState(countItem(index, type));
 
     return (
       <div className={styles.container}>
         <Button handleClick={() => { 
-          if (count > 0) {
+          if (count === 1) {
+            removeItem(index, type);
+          } else {
             setCount(count - 1);
             decreaseCount(index, type);
           }
