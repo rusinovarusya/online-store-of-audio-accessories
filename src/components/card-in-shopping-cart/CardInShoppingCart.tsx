@@ -19,7 +19,7 @@ const CardInShoppingCart: FC<PropsWithChildren<CardInShoppingCartProps>> = ({ in
     <div className={styles.card}>
       <div className={styles.initialBlock}>
         <div className={styles.mainBlock}>
-          <img src={`/images/${img}`} alt="headphones img" className={styles.img} />
+          <img src={`https://raw.githubusercontent.com/rusinovarusya/online-store-of-audio-accessories/images/images/${img}`} alt="headphones img" className={styles.img} />
           <div className={styles.informationBlock}>
             <div className={styles.name}>{name}</div>
             <div className={styles.price}>{price} ₽</div>

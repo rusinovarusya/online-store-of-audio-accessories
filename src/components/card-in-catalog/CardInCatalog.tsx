@@ -17,7 +17,7 @@ const CardInCatalog: FC<PropsWithChildren<CardInCatalogProps>> = ({ index, type 
 
   return (
     <div className={styles.card}>
-      <img src={`/images/${img}`} alt="headphones img" className={styles.img} />
+      <img src={`https://raw.githubusercontent.com/rusinovarusya/online-store-of-audio-accessories/images/images/${img}`} alt="headphones img" className={styles.img} />
       <div className={styles.info}>
         <div className={styles.row}>
           <div className={styles.name}>{name}</div>
