@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/online-store-of-audio-accessories/static/css/main.4a0e69c5.css",
-    "main.js": "/online-store-of-audio-accessories/static/js/main.7c2fa879.js",
+    "main.css": "/online-store-of-audio-accessories/static/css/main.384915e0.css",
+    "main.js": "/online-store-of-audio-accessories/static/js/main.5a3f5b76.js",
     "static/js/787.8a631c4e.chunk.js": "/online-store-of-audio-accessories/static/js/787.8a631c4e.chunk.js",
-    "static/media/vk.svg": "/online-store-of-audio-accessories/static/media/vk.200332db80feb34aac09.svg",
-    "static/media/whatsapp.svg": "/online-store-of-audio-accessories/static/media/whatsapp.8dc15f232a985aef74ed.svg",
-    "static/media/shopping-cart.svg": "/online-store-of-audio-accessories/static/media/shopping-cart.0755738f949b36eb3719.svg",
-    "static/media/language.svg": "/online-store-of-audio-accessories/static/media/language.eedc3647632f195d248e.svg",
-    "static/media/telegram.svg": "/online-store-of-audio-accessories/static/media/telegram.17041232c86fdbc127e2.svg",
-    "static/media/delete.svg": "/online-store-of-audio-accessories/static/media/delete.c3b466f51641c238a464.svg",
+    "static/media/vk.svg": "/online-store-of-audio-accessories/static/media/vk.1ac2cc8950aa67b1d5a0.svg",
+    "static/media/whatsapp.svg": "/online-store-of-audio-accessories/static/media/whatsapp.f998ac590f1ccfac664e.svg",
+    "static/media/shopping-cart.svg": "/online-store-of-audio-accessories/static/media/shopping-cart.d93aa996204975be68ea.svg",
+    "static/media/language.svg": "/online-store-of-audio-accessories/static/media/language.7b9cc68c2528ffcafcbc.svg",
+    "static/media/telegram.svg": "/online-store-of-audio-accessories/static/media/telegram.4cff094a3c5b423ad841.svg",
+    "static/media/delete.svg": "/online-store-of-audio-accessories/static/media/delete.fbdab6c486774a0a07c6.svg",
     "index.html": "/online-store-of-audio-accessories/index.html",
-    "static/media/favorite-goods.svg": "/online-store-of-audio-accessories/static/media/favorite-goods.93e16e12c7f65e8a049a.svg",
-    "static/media/star.svg": "/online-store-of-audio-accessories/static/media/star.bc044334a82d09622eb6.svg",
-    "static/media/plus.svg": "/online-store-of-audio-accessories/static/media/plus.ff4b064e5dd4dbda105b.svg",
-    "static/media/minus.svg": "/online-store-of-audio-accessories/static/media/minus.1288fb6f83d8dd9a8dea.svg",
-    "main.4a0e69c5.css.map": "/online-store-of-audio-accessories/static/css/main.4a0e69c5.css.map",
-    "main.7c2fa879.js.map": "/online-store-of-audio-accessories/static/js/main.7c2fa879.js.map",
+    "static/media/favorite-goods.svg": "/online-store-of-audio-accessories/static/media/favorite-goods.ce728b4b5ce433274406.svg",
+    "static/media/star.svg": "/online-store-of-audio-accessories/static/media/star.da3204f7395f6d58397c.svg",
+    "static/media/plus.svg": "/online-store-of-audio-accessories/static/media/plus.fee3f7ecd8ad8028ea4b.svg",
+    "static/media/minus.svg": "/online-store-of-audio-accessories/static/media/minus.f154d3c0d777b93f7a00.svg",
+    "main.384915e0.css.map": "/online-store-of-audio-accessories/static/css/main.384915e0.css.map",
+    "main.5a3f5b76.js.map": "/online-store-of-audio-accessories/static/js/main.5a3f5b76.js.map",
     "787.8a631c4e.chunk.js.map": "/online-store-of-audio-accessories/static/js/787.8a631c4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a0e69c5.css",
-    "static/js/main.7c2fa879.js"
+    "static/css/main.384915e0.css",
+    "static/js/main.5a3f5b76.js"
   ]
 }
