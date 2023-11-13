@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/online-store-of-audio-accessories/static/css/main.384915e0.css",
-    "main.js": "/online-store-of-audio-accessories/static/js/main.5a3f5b76.js",
+    "main.js": "/online-store-of-audio-accessories/static/js/main.d8a4588a.js",
     "static/js/787.8a631c4e.chunk.js": "/online-store-of-audio-accessories/static/js/787.8a631c4e.chunk.js",
     "static/media/vk.svg": "/online-store-of-audio-accessories/static/media/vk.1ac2cc8950aa67b1d5a0.svg",
     "static/media/whatsapp.svg": "/online-store-of-audio-accessories/static/media/whatsapp.f998ac590f1ccfac664e.svg",
@@ -15,11 +15,11 @@
     "static/media/plus.svg": "/online-store-of-audio-accessories/static/media/plus.fee3f7ecd8ad8028ea4b.svg",
     "static/media/minus.svg": "/online-store-of-audio-accessories/static/media/minus.f154d3c0d777b93f7a00.svg",
     "main.384915e0.css.map": "/online-store-of-audio-accessories/static/css/main.384915e0.css.map",
-    "main.5a3f5b76.js.map": "/online-store-of-audio-accessories/static/js/main.5a3f5b76.js.map",
+    "main.d8a4588a.js.map": "/online-store-of-audio-accessories/static/js/main.d8a4588a.js.map",
     "787.8a631c4e.chunk.js.map": "/online-store-of-audio-accessories/static/js/787.8a631c4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.384915e0.css",
-    "static/js/main.5a3f5b76.js"
+    "static/js/main.d8a4588a.js"
   ]
 }
