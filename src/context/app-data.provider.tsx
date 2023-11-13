@@ -42,7 +42,7 @@ export const AppDataProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
   }
 
   const removeItem = (index: number, type: string) => {
-    setItemsInCart(itemsInCart.filter(item => (item.index !== index && item.type !== type)));
+    setItemsInCart(itemsInCart.filter(item => (item.index !== index || item.type !== type)));
   }
 
   const increaseCount = (index: number, type: string) => {
